@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Test">
+
+    <test name="Chrome Test">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="waitTime" value="15"></parameter>
+        <classes>
+<!--            <class name="tests.RegisterTest">-->
+<!--                <parameter name="titleLocator" value="a[title*='Log in']"></parameter>-->
+<!--            </class>-->
+<!--            <class name="tests.ContactUsTest"></class>-->
+            <class name="tests.LoginTest">
+                <parameter name="username" value="tomsmith"></parameter>
+                <parameter name="password" value="SuperSecretPassword!"></parameter>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Edge Test">
+        <parameter name="browser" value="edge"></parameter>
+        <parameter name="waitTime" value="15"></parameter>
+        <classes>
+            <!--            <class name="tests.RegisterTest">-->
+            <!--                <parameter name="titleLocator" value="a[title*='Log in']"></parameter>-->
+            <!--            </class>-->
+            <!--            <class name="tests.ContactUsTest"></class>-->
+            <class name="tests.LoginTest">
+                <parameter name="username" value="tomsmith"></parameter>
+                <parameter name="password" value="SuperSecretPassword!"></parameter>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
